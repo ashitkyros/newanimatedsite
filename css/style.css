@@ -1,0 +1,135 @@
+@font-face {
+  font-family: home;
+  src: url(/Heading-Now-Variable.ttf);
+}
+
+@font-face {
+  font-family: slide;
+  src: url(/ManukaCondensedRegular.woff2);
+}
+@font-face {
+  font-family: machina;
+  src: url(/PP\ Neue\ Machina\ Inktrap\ Medium.woff);
+}
+*::selection{
+  background-color: #EF9D71;
+}
+:root{
+  --salmon : #EF9D71;
+  --black:#000;
+  --white:#fff;
+  --cyan : #AEDEE0;
+  --dcyan:rgb(24, 58, 60);
+  --dSalmon : rgb(81, 43, 39);
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* color: #fff; */
+  /* overflow: hidden; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#page1 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page2 {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page3 {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1 {
+  width: 300px;
+  height: 300px;
+  background-color: crimson;
+}
+.box2 {
+  width: 300px;
+  height: 300px;
+  background-color: crimson;
+}
+.box3 {
+  width: 300px;
+  height: 300px;
+  background-color: crimson;
+}
+.extra {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.Text{
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-size: 40vw;
+  white-space: nowrap;
+  font-family: home;
+  font-stretch: 260%;
+  font-weight: 999;
+}
+.mainSlide{
+  width: 100%;
+  background-color: pink;
+  overflow: hidden;
+}
+.innerslide{
+  font-family: slide;
+  width: 100%;
+  height: 100vh;
+  color: #000;
+  font-size: 40vh;
+  white-space: nowrap;
+}
+
+body[theme="black"] {
+  background-color: var(--black);
+}
+body[theme="black"] .section{
+  color: var(--white);
+}
+
+body[theme="cyan"] {
+  background-color: var(--cyan);
+}
+body[theme="cyan"] .section {
+  color: var(--dcyan);
+}
+
+body[theme="salmon"] {
+  background-color: var(--salmon);
+}
+
+body[theme="salmon"] .section{
+  color: var(--dSalmon);
+}
+
+body[theme="white"] {
+  background-color: var(--white);
+}
+
+body[theme="white"] .section{
+  color: var(--black);
+}
