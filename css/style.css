@@ -104,11 +104,20 @@ body {
   white-space: nowrap;
 }
 
+.vdo_div{
+  clip-path: circle(var(--clip) at 50% 50%);
+}
+
+body{
+  transition: background-color ease-out .5s;
+}
+
 body[theme="black"] {
   background-color: var(--black);
 }
 body[theme="black"] .section{
   color: var(--white);
+  border-color: #fff !important;
 }
 
 body[theme="cyan"] {
